@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keybot", "Keybot.csproj", "{819CBE2B-79BA-4CBB-A9F4-0E5142E80BCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{819CBE2B-79BA-4CBB-A9F4-0E5142E80BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{819CBE2B-79BA-4CBB-A9F4-0E5142E80BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{819CBE2B-79BA-4CBB-A9F4-0E5142E80BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{819CBE2B-79BA-4CBB-A9F4-0E5142E80BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Utf8Json" Version="1.3.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="framebunker.Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Dependencies\framebunker.Utilities.dll</HintPath>
+      </Reference>
+      <Reference Include="Keybase.net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Dependencies\Keybase.net.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
