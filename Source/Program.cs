@@ -55,22 +55,28 @@ namespace Keybot
 		}
 
 
-		void Channel.IListener.OnMessage (Channel.Message message)
+		void Channel.IListener.OnMessage (Message message)
 		{
 			const string responsePrefix = "\n> ";
 
-			if (string.IsNullOrWhiteSpace (message.Text))
+			if (!message.TryRead (out Message.Data data))
+			{
+				Log.Message ("Ignoring message which could not be read");
+				return;
+			}
+
+			if (string.IsNullOrWhiteSpace (data.Contents))
 			{
 				Log.Message ("Ignoring empty message (probably just unhandled non-text)");
 				return;
 			}
 
-			if (message.Text.StartsWith (responsePrefix))
+			if (data.Contents.StartsWith (responsePrefix))
 			{
 				return;
 			}
 
-			TryRespond (responsePrefix + message.Text);
+			TryRespond (responsePrefix + data.Contents);
 		}
 	}
 }
